@@ -1,6 +1,6 @@
 import React from 'react'
 import Btn from '../componemts/Btn'
-import polygon from '../assets/polygon 3.png'
+import polygon from '../assets/polygon3.png'
 
 function Count(props) {
     return (
