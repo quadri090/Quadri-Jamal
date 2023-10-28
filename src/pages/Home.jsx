@@ -1,6 +1,6 @@
 import React from "react";
 import Btn from "../componemts/Btn";
-import polygon from "../assets/polygon3.png";
+import polygon from "../assets/Polygon3.png";
 import About from "../componemts/About";
 import Tech from "../componemts/Tech";
 import Qualifications from "../componemts/Qualifications";
