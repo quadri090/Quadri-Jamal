@@ -61,8 +61,8 @@ export default function Header() {
               <ListItems text="Home" href="#home" icon='fa-home' />
               <ListItems text="About" href="#about" icon='fa-user' />
               <ListItems text="Skills" href="#skills" icon='fa-book' />
+              <ListItems text="Portfolio" href="#portfolio" icon='fa-picture-o' />
               <ListItems text="Services" href="#services" icon='fa-briefcase' />
-              <ListItems text="Portfolio" href="#services" icon='fa-picture-o' />
               <ListItems text="Contact" href="#services" icon='fa-paper-plane-o' />
             </ul>
           </div>

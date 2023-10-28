@@ -11,14 +11,14 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function Portfolio() {
   return (
-    <div className="py-[100px] md:mt-[200px]">
+    <div className="py-[100px] md:mt-[200px]" id='portfolio' aria-labelledby="portfolio">
       <Headings header="Portfolio" desc="My past projects" />
 
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 6500,
+          delay: 5500,
           disableOnInteraction: false,
         }}
         pagination={{

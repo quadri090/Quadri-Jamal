@@ -5,6 +5,7 @@ import About from "../componemts/About";
 import Tech from "../componemts/Tech";
 import Qualifications from "../componemts/Qualifications";
 import Portfolio from "../componemts/Portfolio";
+import Contact from "../componemts/Contact"
 
 export default function Home() {
   return (
@@ -18,8 +19,8 @@ export default function Home() {
             <i className="fa fa-whatsapp"></i>
             <i className="fa fa-github"></i>
           </div>
-          <div className=" w-[180px] h-[180px] sm:hidden ">
-            <img src={polygon} alt="" />
+          <div className=" sm:hidden ">
+            <img src={polygon} alt="" className="w-[400px] h-[200px] "/>
           </div>
         </div>
 
@@ -42,6 +43,7 @@ export default function Home() {
             next level?
           </p>
           <Btn
+            hreff='https://api.whatsapp.com/message/6IRMBIR4FN7NP1'
             text="Hire Me"
             classes="w-[110px] md:w-[130px] mt-[10px]"
             awesome="fa-paper-plane "
@@ -55,6 +57,7 @@ export default function Home() {
       <Tech />
       <Qualifications />
       <Portfolio />
+      <Contact />
     </div>
   );
 }
