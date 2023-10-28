@@ -7,7 +7,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary-org':'#ff9804',
+        'primary-org':'#ff9804'
+    },
+    fontFamily: {
+      'poppins': ['Poppins', 'sans-serif']
+    },
+    fontWeight: {
+      'night': '1000'
     }
   },
   plugins: [],
