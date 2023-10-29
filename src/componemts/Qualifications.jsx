@@ -67,7 +67,7 @@ export default function () {
       </div>
 
       {show && (
-        <div className="mt-[40px] md:w-[400px] lg:w-[600px] sm:mx-auto">
+        <div className="mt-[40px] sm:w-[400px] lg:w-[600px] sm:mx-auto">
           <div>
             <div className="flex justify-center items-center">
               <div className={dot}></div>
@@ -122,7 +122,7 @@ export default function () {
       )}
 
       {show1 && (
-        <div className="mt-[40px] md:w-[400px] lg:w-[600px] sm:mx-auto">
+        <div className="mt-[40px] sm:w-[400px] lg:w-[600px] sm:mx-auto">
           <div className="flex justify-center items-center">
             <div className={dot}></div>
           </div>

@@ -27,7 +27,7 @@ export default function About() {
           />
         </div>
 
-        <div className="md:w-[400px] lg:w-[550px] text-[16px] leading-6 lg:text-[20px] lg:text-left mt-[30px] lg:mt-0">
+        <div className="sm:w-[400px] lg:w-[550px] text-[16px] leading-6 lg:text-[20px] lg:text-left mt-[30px] lg:mt-0">
           <p className="lg:leading-7">
             With over 1+ years experience in building{" "}
             <br className="hidden lg:block" /> proffessional websites for

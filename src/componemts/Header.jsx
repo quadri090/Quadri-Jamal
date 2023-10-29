@@ -54,13 +54,13 @@ export default function Header() {
           </div>
 
           <div
-            className={`flex lg:font-bold justify-between lg:justify-center items-center lg:z-auto relative lg:static lg:top-0 w-[300px] lg:w-[700px] lg:w-[400px] m-auto lg:m-0  lg:py-6 lg:py-0 h-[200px] lg:h-12 lg:opacity-100 bg-slate-950 lg:bg-slate-900 rounded-2xl transition-opacity ease-in-out duration-500 cursor-pointer ${
+            className={`flex lg:font-bold justify-between lg:justify-center items-center lg:z-auto relative lg:static lg:top-0 w-[300px] sm:w-[500px] md:w-[700px] m-auto lg:m-0   lg:py-0 h-[200px] sm:h-[100px] lg:h-12 lg:opacity-100 bg-slate-950 lg:bg-slate-900 rounded-2xl transition-opacity ease-in-out duration-500 cursor-pointer ${
               navOpen
                 ? " opacity-100 z-10 top-[35px] xs:"
                 : "opacity-0 z-[-1] top-[-1000px]"
             }`}
           >
-            <ul className="grid grid-cols-3 lg:flex justify-between items-center m-auto w-full h-full lg:h-auto lg:w-[442px] lg:w-[600px] lg:mr-[100px]">
+            <ul className="grid grid-cols-3 sm:grid-cols-6 lg:flex justify-between items-center m-auto w-full h-full lg:h-auto lg:w-[600px] lg:mr-[100px]">
               <ListItems text="Home" href="#home" icon="fa-home" />
               <ListItems text="About" href="#about" icon="fa-user" />
               <ListItems text="Skills" href="#skills" icon="fa-book" />

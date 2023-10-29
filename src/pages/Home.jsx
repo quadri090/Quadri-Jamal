@@ -15,9 +15,9 @@ export default function Home() {
     <div >
       <div className="mx-[30px] lg:w-[1100px] lg:mx-auto">
 
-      <div className="flex flex-col md:flex-row lg:items-center justify-between pt-[100px]" id='home' aria-labelledby="home">
-        <div className="flex gap-[50px] items-center md:gap-[100px]">
-          <div className="flex flex-col gap-[15px] md:gap-[20px] lg:gap-[30px] text-[20px] md:text-[24px] lg:text-[28px] text-primary-org ">
+      <div className="flex flex-col sm:flex-row lg:items-center justify-between pt-[100px] lg:pt-[150px]" id='home' aria-labelledby="home">
+        <div className="flex gap-[50px] sm:gap-[20px] md:gap-[100px] items-center ">
+          <div className="flex sm:hidden md:flex flex-col gap-[15px] sm:gap-[20px] lg:gap-[30px] text-[20px] md:text-[24px] lg:text-[28px] text-primary-org ">
             <a href="https://facebook.com">
               <i className="fa fa-facebook-official"></i>
             </a>
@@ -34,14 +34,14 @@ export default function Home() {
               <i className="fa fa-github"></i>
             </a>
           </div>
-          <div className=" md:hidden w-[200px] h-[200px]">
+          <div className=" sm:hidden w-[200px] h-[200px]">
             <img src={polygon} alt="" className="w-[200px] h-[200px]"/>
           </div>
         </div>
 
         <div className="flex flex-col gap-[10px] lg:gap-[20px] mt-[50px] md:mt-0 font-normal lg:font-medium">
-          <p className="text-[28px] lg:text-[45px] font-black">Hi, I'm Jamal</p>
-          <p className="text-[18px] lg:text-[26px] font-medium">
+          <p className="text-[28px] sm:text-[20px] md:text-[28px] lg:text-[45px] font-black">Hi, I'm Jamal</p>
+          <p className="text-[18px] sm:text-[15px] md:text-[18px] lg:text-[26px] font-medium">
             A creative <span className="text-primary-org">
             <TypeIt
                 getBeforeInit={(instance) => {
@@ -60,7 +60,7 @@ export default function Home() {
             I develop beautiful and responsive{" "}
             <span className="text-primary-org">
               SEO
-              <br />
+              <br className="sm:hidden md:block"/>
             </span>{" "}
             optimized websites.
           </p>
@@ -76,7 +76,7 @@ export default function Home() {
             awesome="fa-paper-plane "
           />
         </div>
-        <div className="hidden md:flex w-[300px] h-[250px] lg:w-[400px] lg:h-[300px]">
+        <div className="hidden sm:flex w-[300px] h-[250px] lg:w-[400px] lg:h-[300px]">
           <img src={polygon} alt="" />
         </div>
       </div>

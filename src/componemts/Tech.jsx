@@ -42,7 +42,7 @@ export default function Tech() {
 
       <Headings header='Technologies' desc='Expert proficiency'/>
 
-      <div className="md:flex justify-around">
+      <div className="sm:flex justify-around">
         
         <div>
           <div
