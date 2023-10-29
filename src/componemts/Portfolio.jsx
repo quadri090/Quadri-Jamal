@@ -12,7 +12,7 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function Portfolio() {
   return (
-    <div className="py-[100px] md:mt-[200px]" id='portfolio' aria-labelledby="portfolio">
+    <div className="py-[100px] lg:mt-[200px]" id='portfolio' aria-labelledby="portfolio">
       <Headings header="Portfolio" desc="My past projects" />
 
       <Swiper
