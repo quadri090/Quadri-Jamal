@@ -6,10 +6,13 @@ import Tech from "../componemts/Tech";
 import Qualifications from "../componemts/Qualifications";
 import Portfolio from "../componemts/Portfolio";
 import Contact from "../componemts/Contact"
+import Footer from "../componemts/Footer";
 
 export default function Home() {
   return (
-    <div className="mx-[30px] md:w-[1100px] md:mx-auto">
+    <div >
+      <div className="mx-[30px] md:w-[1100px] md:mx-auto">
+
       <div className="flex flex-col sm:flex-row sm:items-center justify-between pt-[150px]" id='home' aria-labelledby="home">
         <div className="flex gap-[50px] md:gap-[100px]">
           <div className="flex flex-col gap-[25px] sm:gap-[40px] text-[20px] sm:text-[28px] text-primary-org">
@@ -20,7 +23,7 @@ export default function Home() {
             <i className="fa fa-github"></i>
           </div>
           <div className=" sm:hidden ">
-            <img src={polygon} alt="" className="w-[400px] h-[200px] "/>
+            <img src={polygon} alt="" className="w-[200px] h-[200px]"/>
           </div>
         </div>
 
@@ -58,6 +61,8 @@ export default function Home() {
       <Qualifications />
       <Portfolio />
       <Contact />
+      </div>
+      <Footer />
     </div>
   );
 }

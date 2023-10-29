@@ -22,12 +22,12 @@ export default function Header() {
   return (
     <>
       <header className="sm:h-[50px] w-full flex items-center justify-center">
-        <nav className="w-full mt-0 h-12 sm:h-28 md:h-[50px] md:m-auto sm:justify-center top-0 b sm:items-center z-10 fixed bg-slate-900 lg:w-[1200px] sm:flex lg:justify-between lg:mx-auto">
+        <nav className="w-full mt-0 h-12 sm:h-28 md:h-[50px] md:m-auto sm:justify-center top-0 b sm:items-center z-50 fixed bg-slate-950 lg:w-[1200px] sm:flex lg:justify-between lg:mx-auto">
           <div className="flex items-center justify-between mt-[13px] sm:mt-0 mx-[30px] sm:mx-0">
             <div id="logo" className=" h-[39px]">
               <p className="text-orange-500 font-semibold text-[15px] sm:text-[26px] leading-[34px]">
                 {" "}
-                &lt;/J<span className="text-white">amal</span>
+                &lt;/J<span className="text-zinc-400">amal</span>
                 <span className="text-orange-500">&gt;</span>
               </p>
             </div>
@@ -51,19 +51,19 @@ export default function Header() {
           </div>
 
           <div
-            className={`flex md:font-bold justify-between md:justify-center items-center sm:z-auto relative sm:static sm:top-0 w-[300px] sm:w-[700px] md:w-[400px] m-auto md:m-0  sm:py-6 md:py-0 h-[200px] sm:h-12 sm:opacity-100 bg-slate-950 sm:bg-slate-900 rounded-2xl transition-opacity ease-in-out duration-500 cursor-pointer ${
+            className={`flex md:font-bold justify-between md:justify-center items-center sm:z-auto relative sm:static sm:top-0 w-[300px] sm:w-[700px] md:w-[400px] m-auto md:m-0  sm:py-6 md:py-0 h-[200px] sm:h-12 sm:opacity-100 bg-slate-900 sm:bg-slate-950 rounded-2xl transition-opacity ease-in-out duration-500 cursor-pointer ${
               navOpen
                 ? " opacity-100 z-10 top-[35px] xs:"
                 : "opacity-0 z-[-1] top-[-1000px]"
             }`}
           >
-            <ul className="grid grid-cols-3 sm:flex justify-between items-center m-auto w-full h-full md:h-auto sm:w-[442px] md:w-[600px]">
+            <ul className="grid grid-cols-3 sm:flex justify-between items-center m-auto w-full h-full md:h-auto sm:w-[442px] md:w-[600px] lg:mr-[100px]">
               <ListItems text="Home" href="#home" icon='fa-home' />
               <ListItems text="About" href="#about" icon='fa-user' />
               <ListItems text="Skills" href="#skills" icon='fa-book' />
               <ListItems text="Portfolio" href="#portfolio" icon='fa-picture-o' />
+              <ListItems text="Contact" href="#contact" icon='fa-paper-plane-o' />
               <ListItems text="Services" href="#services" icon='fa-briefcase' />
-              <ListItems text="Contact" href="#services" icon='fa-paper-plane-o' />
             </ul>
           </div>
         </nav>

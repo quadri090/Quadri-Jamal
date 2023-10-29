@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import PortfolioCard from "./PortfolioCard";
 import chow from "../assets/chow.png";
 import fintekk from "../assets/fintekk.png";
+import construction from "../assets/construction.png"
 import Headings from "./Headings";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -38,9 +39,10 @@ export default function Portfolio() {
         </SwiperSlide>
         <SwiperSlide>
           <PortfolioCard
-            src={chow}
+            src={construction}
             head="Construction website"
             desc="Responsive modern components with adaptive UI components for Eco-builders. Responsive on all devivces."
+            hrefff='https://construction-landing-page-seven.vercel.app/'
           />
         </SwiperSlide>
         <SwiperSlide>

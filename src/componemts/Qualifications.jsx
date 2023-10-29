@@ -45,7 +45,7 @@ export default function () {
       <div className="w-[300px] mx-auto mt-[70px] flex justify-between">
         <div className="">
           <div
-            className={`${classes} ${show ? "text-primary-org" : "text-white"}`}
+            className={`${classes} ${show && "text-primary-org"}`}
             onClick={() => toggle()}
           >
             <i className="fa fa-graduation-cap text-[25px] font-bold"></i>
@@ -55,7 +55,7 @@ export default function () {
         <div className="">
           <div
             className={`${classes} ${
-              show1 ? "text-primary-org" : "text-white"
+              show1 && "text-primary-org"
             }`}
             onClick={() => toggle1()}
           >
