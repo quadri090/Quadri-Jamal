@@ -47,7 +47,11 @@ export default function Portfolio() {
             />
           </SwiperSlide>
           <SwiperSlide>
-            <PortfolioCard src={fintekk} head="Fintech Landing Page" desc="Responsive modern components with adaptive UI components for Fintekk. Responsive accross multiple devivces." />
+            <PortfolioCard src={fintekk} 
+              head="Fintech Landing Page"
+              desc="Responsive modern components with adaptive UI components for Fintekk. Responsive accross multiple devivces."
+              hrefff='https://fintekk-project.vercel.app/'
+            />
           </SwiperSlide>
         </Swiper>
       </div>
