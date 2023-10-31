@@ -61,10 +61,10 @@ export default function Tech() {
           </div>
           {visibility && (
             <div className="flex flex-col gap-[20px]">
-              <TechTools text="HTML" width="w-[85%]" />
-              <TechTools text="CSS" width="w-[70%]" />
-              <TechTools text="Tailwind CSS" width="w-[85%]" />
-              <TechTools text="React.js" width="w-[70%]" />
+              <TechTools text="HTML" width="w-[80%]" />
+              <TechTools text="CSS" width="w-[65%]" />
+              <TechTools text="Tailwind CSS" width="w-[80%]" />
+              <TechTools text="React.js" width="w-[60%]" />
               <TechTools text="JavaScript" width="w-[60%]" />
             </div>
           )}

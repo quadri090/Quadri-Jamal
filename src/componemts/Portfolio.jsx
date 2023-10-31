@@ -14,41 +14,43 @@ export default function Portfolio() {
   return (
     <div className="py-[100px] lg:mt-[200px]" id='portfolio' aria-labelledby="portfolio">
       <Headings header="Portfolio" desc="My past projects" />
+      <div className=" rounded-xl shadow-2xl ">
 
-      <Swiper
-        spaceBetween={30}
-        centeredSlides={true}
-        autoplay={{
-          delay: 5500,
-          disableOnInteraction: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        // navigation={true}
-        modules={[Autoplay, Pagination]}
-        className="mySwiper mt-[80px] h-auto"
-      >
-        <SwiperSlide>
-          <PortfolioCard
-            src={chow}
-            head="Food Ordering App"
-            desc="Responsive modern components with adaptive UI components for chowShop. Responsive on all devivces."
-            hrefff='https://chowshop.vercel.app/'
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <PortfolioCard
-            src={construction}
-            head="Construction website"
-            desc="Responsive modern components with adaptive UI components for Eco-builders. Responsive on all devivces."
-            hrefff='https://construction-landing-page-seven.vercel.app/'
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <PortfolioCard src={fintekk} head="Fintech Landing Page" desc="Responsive modern components with adaptive UI components for Fintekk. Responsive accross multiple devivces." />
-        </SwiperSlide>
-      </Swiper>
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 5500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          // navigation={true}
+          modules={[Autoplay, Pagination]}
+          className="mySwiper mt-[80px] h-auto"
+        >
+          <SwiperSlide>
+            <PortfolioCard
+              src={chow}
+              head="Food Ordering App"
+              desc="Responsive modern components with adaptive UI components for chowShop. Responsive on all devivces."
+              hrefff='https://chowshop.vercel.app/'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              src={construction}
+              head="Construction website"
+              desc="Responsive modern components with adaptive UI components for Eco-builders. Responsive on all devivces."
+              hrefff='https://construction-landing-page-seven.vercel.app/'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard src={fintekk} head="Fintech Landing Page" desc="Responsive modern components with adaptive UI components for Fintekk. Responsive accross multiple devivces." />
+          </SwiperSlide>
+        </Swiper>
+      </div>
     </div>
   );
 }
