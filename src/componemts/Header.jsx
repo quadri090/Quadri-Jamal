@@ -54,7 +54,7 @@ export default function Header() {
           </div>
 
           <div
-            className={`flex lg:font-bold justify-between lg:justify-center items-center lg:z-auto relative lg:static lg:top-0 w-[300px] sm:w-[500px] md:w-[700px] m-auto lg:m-0   lg:py-0 h-[200px] sm:h-[100px] lg:h-12 lg:opacity-100 bg-slate-950 lg:bg-slate-900 rounded-2xl transition-opacity ease-in-out duration-500 cursor-pointer ${
+            className={`flex lg:font-bold justify-between lg:justify-center items-center lg:z-auto relative lg:static lg:top-0 w-[300px] sm:w-[500px] md:w-[700px] m-auto lg:m-0   lg:py-0 h-[200px] sm:h-[100px] lg:h-12 lg:opacity-100 bg-slate-950 lg:bg-slate-900 rounded-2xl transition-opacity ease-in-out duration-500 cursor-pointer outline outline-zinc-600  ${
               navOpen
                 ? " opacity-100 z-10 top-[35px] xs:"
                 : "opacity-0 z-[-1] top-[-1000px]"

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState } from "react";
 import Btn from "./Btn";
 import polygon from "../assets/Polygon3.png";
 import Headings from "./Headings";
@@ -13,6 +13,9 @@ function Count(props) {
 }
 
 export default function About() {
+
+  const [download, setDownload] = useState(true);
+
   return (
     <section className="flex flex-col items-center justify-center text-center pt-[100px] lg:mt-[200px]" id='about' aria-labelledby="about">
       
@@ -29,11 +32,11 @@ export default function About() {
 
         <div className="sm:w-[400px] lg:w-[550px] text-[16px] leading-6 lg:text-[20px] lg:text-left mt-[30px] lg:mt-0">
           <p className="lg:leading-7">
-            With over 1+ years experience in building{" "}
-            <br className="hidden lg:block" /> proffessional websites for
+            With over 1 year experience in building{" "}
+            <br className="hidden lg:block" /> professional websites for
             businesses, <br className="hidden lg:block" /> brands and
             individuals, I bring you closer <br className="hidden lg:block" />{" "}
-            to your customers with my developer and +{" "}
+            to your customers with my developer +{" "}
             <br className="hidden lg:block" /> SEO skills.
           </p>
           <p className="mt-[20px]">
@@ -44,11 +47,19 @@ export default function About() {
             <Count num="09" text="Completed Projects" />
             <Count num="01" text="Helped Companies" />
           </div>
-          <Btn
-            text="Download CV"
-            classes="w-[150px] lg:w-[200px] mt-[40px] mx-auto lg:mx-0"
-            awesome="fa-download"
-          />
+          <div className="" onClick={() => setDownload(false )}>
+            { download ?
+              <Btn
+                text="Download CV"
+                classes="w-[150px] lg:w-[200px] mt-[40px] mx-auto lg:mx-0"
+                awesome="fa-download"
+              /> :
+              <Btn
+              classes="w-[150px] lg:w-[200px] mt-[40px] mx-auto lg:mx-0"
+              awesome="fa-ban text-[28px]"
+            /> 
+            }
+          </div>
         </div>
       </div>
     </section>
