@@ -5,7 +5,7 @@ function TechTools(props) {
   return (
     <div className="ml-[45px]">
       <p className="mb-[8px] lg:text-[18px] lg:font-medium">{props.text}</p>
-      <div className="  bg-[#f5c685] opacity-70 rounded-[10px]">
+      <div className="  bg-[#fff] opacity-70 rounded-[10px]">
         <div
           className={`${props.width} border-[3px] lg:border-[4px] border-primary-org rounded-[10px]`}
         ></div>
@@ -89,6 +89,7 @@ export default function Tech() {
           </div>
           {visibility1 && (
             <div className="flex flex-col gap-[20px]">
+              <TechTools text="NextJs" width="w-[55%]" />
               <TechTools text="NodeJS" width="w-[25%]" />
               <TechTools text="ExpressJS" width="w-[20%]" />
             </div>

@@ -32,7 +32,7 @@ export default function About() {
 
         <div className="sm:w-[400px] lg:w-[550px] text-[16px] leading-6 lg:text-[20px] lg:text-left mt-[30px] lg:mt-0">
           <p className="lg:leading-7">
-            With over 1 year experience in building{" "}
+            With 1 year experience in building{" "}
             <br className="hidden lg:block" /> professional websites for
             businesses, <br className="hidden lg:block" /> brands and
             individuals, I bring you closer <br className="hidden lg:block" />{" "}

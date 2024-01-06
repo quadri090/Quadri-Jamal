@@ -25,8 +25,8 @@ export default function Header() {
   return (
     <>
       <header className="lg:h-[50px] w-full flex items-center justify-center">
-        <nav className="w-full mt-0 h-12 lg:h-[50px] lg:m-auto top-0 b lg:items-center z-50 fixed bg-slate-900 lg:w-[1200px] lg:flex lg:justify-between lg:mx-auto">
-          <div className="flex items-center justify-between mt-[13px] lg:mt-0 mx-[30px] lg:mx-0">
+        <nav className="w-full mt-0 h-12 lg:h-[50px] lg:m-auto top-0 b items-center justify-center z-50 fixed bg-slate-900 lg:w-[1200px] lg:flex lg:justify-between lg:mx-auto">
+          <div className="flex items-center justify-between mt-[5px] lg:mt-0 mx-[30px] lg:mx-0">
             <div id="logo" className=" h-[39px]">
               <p className="text-orange-500 font-semibold text-[15px] md:text-[20px] lg:text-[26px] leading-[34px]">
                 {" "}
@@ -54,7 +54,7 @@ export default function Header() {
           </div>
 
           <div
-            className={`flex lg:font-bold justify-between lg:justify-center items-center lg:z-auto relative lg:static lg:top-0 w-[300px] sm:w-[500px] md:w-[700px] m-auto lg:m-0   lg:py-0 h-[200px] sm:h-[100px] lg:h-12 lg:opacity-100 bg-slate-950 lg:bg-slate-900 rounded-2xl transition-opacity ease-in-out duration-500 cursor-pointer outline outline-zinc-600  ${
+            className={`flex lg:font-bold justify-between lg:justify-center items-center lg:z-auto relative lg:static lg:top-0 w-[300px] sm:w-[500px] md:w-[700px] m-auto lg:m-0   lg:py-0 h-[200px] sm:h-[100px] lg:h-12 lg:opacity-100 bg-slate-950 lg:bg-slate-900 rounded-2xl transition-opacity ease-in-out duration-500 cursor-pointer outline outline-zinc-600 md:outline-none  ${
               navOpen
                 ? " opacity-100 z-10 top-[35px] xs:"
                 : "opacity-0 z-[-1] top-[-1000px]"

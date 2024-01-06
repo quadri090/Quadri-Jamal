@@ -9,7 +9,7 @@ export default function PortfolioCard(props) {
             <p className='mt-[25px] lg:mt-[-5px] text-[18px] md:text-[24px] font-semibold'>{props.head}</p>
             <p className='mt-[5px] md:mt-[10px] text-[15px] md:text-[18px] font-normal'>{props.desc}</p>
             <Btn 
-                text='Demo'
+                text='Visit'
                 awesome='fa-paper-plane-o'
                 classes='w-[100px] lg:w-[120px] mt-[15px]'
                 hreff={props.hrefff}

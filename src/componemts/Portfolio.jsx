@@ -3,6 +3,7 @@ import PortfolioCard from "./PortfolioCard";
 import chow from "../assets/chow.png";
 import fintekk from "../assets/fintekk.png";
 import construction from "../assets/construction.png"
+import smtp from "../assets/smtp-app.png"
 import Headings from "./Headings";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -20,7 +21,7 @@ export default function Portfolio() {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 5500,
+            delay: 5000,
             disableOnInteraction: false,
           }}
           pagination={{
@@ -35,7 +36,15 @@ export default function Portfolio() {
               src={chow}
               head="Food Ordering App"
               desc="Responsive modern components with adaptive UI components for chowShop. Responsive on all devivces."
-              hrefff='https://chowshop.vercel.app/'
+              hrefff='https://chowchow-three.vercel.app/'
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              src={smtp}
+              head="Email server"
+              desc="An Email client utilizing nodejs and gmail SMTP"
+              hrefff='https://smtp-app.vercel.app/'
             />
           </SwiperSlide>
           <SwiperSlide>
