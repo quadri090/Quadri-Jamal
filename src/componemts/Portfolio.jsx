@@ -40,7 +40,7 @@ export default function Portfolio() {
               src={shopbuddy}
               head="ShopBuddy"
               desc="An ecommerce app built on TailwindCSS, ReactJS, NextJS, Prisma & Mongodb Responsive on all devivces."
-              hrefff="https://chowchow-three.vercel.app/"
+              hrefff="https://shopbuddy1.vercel.app/"
             />
           </SwiperSlide>
           <SwiperSlide>
