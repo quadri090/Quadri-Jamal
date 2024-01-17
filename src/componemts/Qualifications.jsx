@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Headings from "./Headings";
 
+
 function Stats(props) {
   return (
     <div className={`${props.classs} w-[50%]`}>
@@ -15,7 +16,7 @@ function Stats(props) {
 }
 
 
-export default function () {
+export default function Qualifications() {
   const classes = [
     "flex items-center gap-[8px] text-[16px] md:text-[22px] font-semibold hover:cursor-pointer hover:text-primary-org"
   ];
@@ -40,7 +41,7 @@ export default function () {
   };
 
   return (
-    <div className="pt-[100px] lg:pt-[150px]">
+    <section className="pt-[100px] lg:pt-[150px]">
       <Headings header="Qualifications" desc="Why you should hire me" />
       <div className="w-[300px] mx-auto mt-[70px] flex justify-between">
         <div className="">
@@ -168,6 +169,6 @@ export default function () {
           </div>
         </div>
       )}
-    </div>
-  );
+    </section>
+  )
 }

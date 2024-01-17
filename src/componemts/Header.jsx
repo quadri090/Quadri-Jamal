@@ -7,11 +7,11 @@ export default function Header() {
     return (
       <>
         <div
-          className="lg:mx-4 my-4 lg:my-0 text-center"
+          className="my-4 text-center lg:mx-4 lg:my-0"
           onClick={() => setNavOpen(!navOpen)}
         >
           <a
-            className="flex flex-col gap-[8px] lg:block hover:text-primary-org"
+            className="hover:text-primary-org flex flex-col gap-[8px] lg:block"
             href={`${props.href}`}
           >
             <i className={`fa ${props.icon} lg:hidden`}></i>
@@ -24,18 +24,18 @@ export default function Header() {
 
   return (
     <>
-      <header className="lg:h-[50px] w-full flex items-center justify-center">
-        <nav className="w-full mt-0 h-12 lg:h-[50px] lg:m-auto top-0 b items-center justify-center z-50 fixed bg-slate-900 lg:w-[1200px] lg:flex lg:justify-between lg:mx-auto">
-          <div className="flex items-center justify-between mt-[5px] lg:mt-0 mx-[30px] lg:mx-0">
+      <header className="flex w-full items-center justify-center lg:h-[50px]">
+        <nav className="b fixed top-0 z-50 mt-0 h-12 w-full items-center justify-center bg-slate-900 lg:m-auto lg:mx-auto lg:flex lg:h-[50px] lg:w-[1200px] lg:justify-between">
+          <div className="mx-[30px] mt-[5px] flex items-center justify-between lg:mx-0 lg:mt-0">
             <div id="logo" className=" h-[39px]">
-              <p className="text-orange-500 font-semibold text-[15px] md:text-[20px] lg:text-[26px] leading-[34px]">
+              <p className="text-primary-org text-[15px] font-semibold leading-[34px] md:text-[20px] lg:text-[26px]">
                 {" "}
                 &lt;/J<span className="text-zinc-400">amal</span>
-                <span className="text-orange-500">&gt;</span>
+                <span className="text-primary-org">&gt;</span>
               </p>
             </div>
             <button
-              className="mx-2 cursor-pointer h-[26px] lg:hidden"
+              className="mx-2 h-[26px] cursor-pointer lg:hidden"
               onClick={() => setNavOpen(!navOpen)}
             >
               <i
@@ -54,13 +54,13 @@ export default function Header() {
           </div>
 
           <div
-            className={`flex lg:font-bold justify-between lg:justify-center items-center lg:z-auto relative lg:static lg:top-0 w-[300px] sm:w-[500px] md:w-[700px] m-auto lg:m-0   lg:py-0 h-[200px] sm:h-[100px] lg:h-12 lg:opacity-100 bg-slate-950 lg:bg-slate-900 rounded-2xl transition-opacity ease-in-out duration-500 cursor-pointer outline outline-zinc-600 md:outline-none  ${
+            className={`relative m-auto flex h-[200px] w-[300px] cursor-pointer items-center justify-between rounded-2xl bg-slate-950 outline outline-zinc-600 transition-opacity duration-500   ease-in-out sm:h-[100px] sm:w-[500px] md:w-[700px] md:outline-none lg:static lg:top-0 lg:z-auto lg:m-0 lg:h-12 lg:justify-center lg:bg-slate-900 lg:py-0 lg:font-bold lg:opacity-100  ${
               navOpen
-                ? " opacity-100 z-10 top-[35px] xs:"
-                : "opacity-0 z-[-1] top-[-1000px]"
+                ? " xs: top-[35px] z-10 opacity-100"
+                : "top-[-1000px] z-[-1] opacity-0"
             }`}
           >
-            <ul className="grid grid-cols-3 sm:grid-cols-6 lg:flex justify-between items-center m-auto w-full h-full lg:h-auto lg:w-[600px] lg:mr-[100px]">
+            <ul className="m-auto grid h-full w-full grid-cols-3 items-center justify-between sm:grid-cols-6 lg:mr-[100px] lg:flex lg:h-auto lg:w-[600px]">
               <ListItems text="Home" href="#home" icon="fa-home" />
               <ListItems text="About" href="#about" icon="fa-user" />
               <ListItems text="Skills" href="#skills" icon="fa-book" />

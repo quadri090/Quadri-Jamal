@@ -14,7 +14,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 
 export default function Portfolio() {
   return (
-    <div
+    <section
       className="py-[100px] lg:mt-[200px]"
       id="portfolio"
       aria-labelledby="portfolio"
@@ -39,7 +39,7 @@ export default function Portfolio() {
             <PortfolioCard
               src={shopbuddy}
               head="ShopBuddy"
-              desc="An ecommerce app built on TailwindCSS, ReactJS, NextJS, Prisma & Mongodb Responsive on all devivces."
+              desc="An ecommerce app built on TailwindCSS, ReactJS, NextJS, Prisma & Mongodb. Responsive accross devices."
               hrefff="https://shopbuddy1.vercel.app/"
             />
           </SwiperSlide>
@@ -47,7 +47,7 @@ export default function Portfolio() {
             <PortfolioCard
               src={chow}
               head="ChowShop"
-              desc="A food ordering app utilizing TailwindCSS, ReactJS, NextJS, Mongoose & MongoDB."
+              desc="A food ordering app utilizing TailwindCSS, ReactJS, NextJS, Mongoose & MongoDB, and flutterwave."
               hrefff="https://chowchow-three.vercel.app/"
             />
           </SwiperSlide>
@@ -71,12 +71,12 @@ export default function Portfolio() {
             <PortfolioCard
               src={fintekk}
               head="Fintech"
-              desc="Fintech company landing page. Responsive accross multiple devivces."
+              desc="Fintech company landing page. Responsive accross multiple devices."
               hrefff="https://fintekk-project.vercel.app/"
             />
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 }

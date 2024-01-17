@@ -5,9 +5,9 @@ function TechTools(props) {
   return (
     <div className="ml-[45px]">
       <p className="mb-[8px] lg:text-[18px] lg:font-medium">{props.text}</p>
-      <div className="  bg-[#fff] opacity-70 rounded-[10px]">
+      <div className="  rounded-[10px] bg-[#fff] opacity-70">
         <div
-          className={`${props.width} border-[3px] lg:border-[4px] border-primary-org rounded-[10px]`}
+          className={`${props.width} border-primary-org rounded-[10px] border-[3px] lg:border-[4px]`}
         ></div>
       </div>
     </div>
@@ -17,12 +17,14 @@ function TechTools(props) {
 export default function Tech() {
   const [visibility, setVisibility] = useState(false);
   const [visibility1, setVisibility1] = useState(false);
-  const container = ["flex items-center gap-[15px] lg:gap-[30px] my-[40px] lg:my-[60px] hover:cursor-pointer"]
+  const container = [
+    "flex items-center gap-[15px] lg:gap-[30px] my-[40px] lg:my-[60px] hover:cursor-pointer",
+  ];
 
   const toggle = () => {
     if (visibility == false) {
       setVisibility(true);
-      setVisibility1(false)
+      setVisibility1(false);
     } else if (visibility == true) {
       setVisibility(false);
     }
@@ -31,33 +33,38 @@ export default function Tech() {
   const toggle1 = () => {
     if (visibility1 == false) {
       setVisibility1(true);
-      setVisibility(false)
+      setVisibility(false);
     } else if (visibility1 == true) {
       setVisibility1(false);
     }
   };
 
   return (
-    <section className="pt-[100px] lg:pt-[150px]" id='skills' aria-labelledby="skills">
+    <section
+      className="pt-[100px] lg:pt-[150px]"
+      id="skills"
+      aria-labelledby="skills"
+    >
+      <Headings header="Technologies" desc="Expert proficiency" />
 
-      <Headings header='Technologies' desc='Expert proficiency'/>
-
-      <div className="sm:flex justify-around">
-        
+      <div className="justify-around sm:flex">
         <div>
-          <div
-            className={container}
-            onClick={() => toggle()}
-          >
-            <p className="font-black text-[24px] w-[40px] lg:w-[50px] text-primary-org">{`{ }`}</p>
-            <div className="leading-5 lg:leading-7 w-full">
-              <p className="text-[18px] lg:text-[24px] font-semibold">Frontend Development</p>
-              <p className="text-[12px] lg:text-[14px] text-primary-org">
+          <div className={container} onClick={() => toggle()}>
+            <p className="text-primary-org w-[40px] animate-bounce text-[24px] font-black lg:w-[50px]">{`{ }`}</p>
+            <div className="w-full leading-5 lg:leading-7">
+              <p className="text-[18px] font-semibold lg:text-[24px]">
+                Frontend Development
+              </p>
+              <p className="text-primary-org text-[12px] lg:text-[14px]">
                 With 1+ years experience
               </p>
             </div>
-            {!visibility && <i className="fa fa-chevron-down lg:text-[20px] text-primary-org"></i>}
-            {visibility && <i className="fa fa-chevron-up lg:text-[20px] text-primary-org"></i>}
+            {!visibility && (
+              <i className="fa fa-chevron-down text-primary-org lg:text-[20px]"></i>
+            )}
+            {visibility && (
+              <i className="fa fa-chevron-up text-primary-org lg:text-[20px]"></i>
+            )}
           </div>
           {visibility && (
             <div className="flex flex-col gap-[20px]">
@@ -71,21 +78,22 @@ export default function Tech() {
         </div>
 
         <div>
-          <div
-            className={container}
-            onClick={() => toggle1()}
-          >
-            <i className="fa fa-database font-black text-[24px] w-[40px] lg:w-[50px] text-primary-org"></i>
-            <div className="leading-5 lg:leading-7 w-full">
-              <p className="text-[18px] lg:text-[24px] font-semibold">Backend Development</p>
-              <p className="text-[12px] lg:text-[14px] text-primary-org">
+          <div className={container} onClick={() => toggle1()}>
+            <i className="fa fa-database text-primary-org w-[40px] animate-bounce text-[24px] font-black lg:w-[50px]"></i>
+            <div className="w-full leading-5 lg:leading-7">
+              <p className="text-[18px] font-semibold lg:text-[24px]">
+                Backend Development
+              </p>
+              <p className="text-primary-org text-[12px] lg:text-[14px]">
                 With 0+ years experience
               </p>
             </div>
             {!visibility1 && (
-              <i className="fa fa-chevron-down lg:text-[20px] text-primary-org"></i>
+              <i className="fa fa-chevron-down text-primary-org lg:text-[20px]"></i>
             )}
-            {visibility1 && <i className="fa fa-chevron-up lg:text-[20px] text-primary-org"></i>}
+            {visibility1 && (
+              <i className="fa fa-chevron-up text-primary-org lg:text-[20px]"></i>
+            )}
           </div>
           {visibility1 && (
             <div className="flex flex-col gap-[20px]">

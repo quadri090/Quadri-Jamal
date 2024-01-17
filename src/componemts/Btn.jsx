@@ -3,7 +3,7 @@ import React from "react";
 export default function Btn(props) {
   return (
     <a
-      className={`${props.classes} flex items-center justify-center gap-[10px] h-[50px] lg:h-[60px] text-[15px] lg:text-[18px] text-white font-semibold bg-primary-org  rounded-[6px] sm:hover:opacity-80 hover:cursor-pointer`}
+      className={`${props.classes} bg-primary-org flex h-[50px] items-center justify-center gap-[10px] rounded-[6px] text-[15px] font-semibold text-white hover:cursor-pointer  sm:hover:opacity-80 lg:h-[60px] lg:text-[18px]`}
       href={props.hreff}
       target="blank"
     >
