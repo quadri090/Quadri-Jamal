@@ -24,7 +24,7 @@ export default function Home() {
         >
           <div className="flex items-center gap-[50px] sm:gap-[20px] md:gap-[100px] ">
             <div className=" flex flex-col gap-[15px] text-[20px] sm:hidden sm:gap-[20px] md:flex md:text-[24px] lg:gap-[30px] lg:text-[28px] ">
-              <a href="https://facebook.com">
+              <a href="#">
                 <i className="fa fa-facebook-official hover:text-primary-org"></i>
               </a>
               <a href="https://twitter.com/qadr_jamal?t=B6_1p6bzQqJQEAkjvQ0OhQ&s=09">
@@ -78,7 +78,7 @@ export default function Home() {
               to the next level?
             </p>
             <Btn
-              hreff="https://wa.me/2347010816900?text=Hi%20Jamal.%0A%0AI've%20just%20gone%20through%20your%20profile%20and%20i'm%20interested%20in%20"
+              hreff="mailto:quadri090@gmail.com"
               text="Hire Me"
               classes="w-[110px] lg:w-[130px] mt-[10px]"
               awesome="fa-paper-plane "

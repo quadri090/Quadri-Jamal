@@ -39,7 +39,7 @@ export default function Portfolio() {
             <PortfolioCard
               src={shopbuddy}
               head="ShopBuddy"
-              desc="An ecommerce app built on TailwindCSS, ReactJS, NextJS, Prisma & Mongodb. Responsive accross devices."
+              desc="An ecommerce app built on TailwindCSS, ReactJS, NextJS, Prisma & Mongodb. Responsive across devices."
               hrefff="https://shopbuddy1.vercel.app/"
             />
           </SwiperSlide>
@@ -47,7 +47,7 @@ export default function Portfolio() {
             <PortfolioCard
               src={chow}
               head="ChowShop"
-              desc="A food ordering app utilizing TailwindCSS, ReactJS, NextJS, Mongoose & MongoDB, and flutterwave."
+              desc="A food ordering app utilizing TailwindCSS, ReactJS, NextJS, Mongoose & MongoDB, and flutterwave(demo)."
               hrefff="https://chowchow-three.vercel.app/"
             />
           </SwiperSlide>
@@ -55,7 +55,7 @@ export default function Portfolio() {
             <PortfolioCard
               src={smtp}
               head="Email Server"
-              desc="An Email client built with React & Nextjs, NodeMailer & gmail SMTP."
+              desc="An Email client built with TailwindCSS, React & Nextjs, Nodejs & gmail SMTP."
               hrefff="https://smtp-app.vercel.app/"
             />
           </SwiperSlide>
@@ -63,15 +63,15 @@ export default function Portfolio() {
             <PortfolioCard
               src={construction}
               head="Eco-Builders"
-              desc="Construction website landing page. Responsive on all devivces."
+              desc="Construction website landing page. Responsive on all devices."
               hrefff="https://construction-landing-page-seven.vercel.app/"
             />
           </SwiperSlide>
           <SwiperSlide>
             <PortfolioCard
               src={fintekk}
-              head="Fintech"
-              desc="Fintech company landing page. Responsive accross multiple devices."
+              head="Fintekk"
+              desc="Fintech company landing page. TailwindCSS & JavaScript. Responsive across devices."
               hrefff="https://fintekk-project.vercel.app/"
             />
           </SwiperSlide>

@@ -11,6 +11,7 @@ function GetInTouch(props) {
       <div className="">
         <p className="text-[17px] font-semibold ">{props.head}</p>
         <p className="text-[13px]">{props.desc}</p>
+        <a href={props.src} className="text-[13px]">{props.altText}</a>
       </div>
     </div>
   );
@@ -33,13 +34,16 @@ export default function Footer() {
           <GetInTouch
             awesome="fa-phone mail"
             head="Prefer calling?"
-            desc="+2347010816900"
+            src="tel:+2347010816900"
+            altText="+2347010816900"
           />
           <GetInTouch
             awesome="fa-envelope-o mail"
             head="Email"
-            desc="quadri090@gmail.com"
+            src="mailto:quadri090@gmail.com"
+            altText="quadri090@gmail.com"
           />
+
           <GetInTouch awesome="fa-globe spin" head="Location" desc="Earth" />
         </div>
       </div>

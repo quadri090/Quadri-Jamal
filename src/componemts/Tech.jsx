@@ -50,7 +50,7 @@ export default function Tech() {
       <div className="justify-around sm:flex">
         <div>
           <div className={container} onClick={() => toggle()}>
-            <p className="text-primary-org w-[40px] animate-bounce text-[24px] font-black lg:w-[50px]">{`{ }`}</p>
+            <p className="text-primary-org w-[40px] text-[24px] font-black lg:w-[50px] animate-bounce">{`{ }`}</p>
             <div className="w-full leading-5 lg:leading-7">
               <p className="text-[18px] font-semibold lg:text-[24px]">
                 Frontend Development
@@ -70,16 +70,16 @@ export default function Tech() {
             <div className="flex flex-col gap-[20px]">
               <TechTools text="HTML" width="w-[80%]" />
               <TechTools text="CSS" width="w-[65%]" />
-              <TechTools text="Tailwind CSS" width="w-[80%]" />
-              <TechTools text="React.js" width="w-[60%]" />
               <TechTools text="JavaScript" width="w-[60%]" />
+              <TechTools text="TailwindCSS" width="w-[80%]" />
+              <TechTools text="React.js" width="w-[60%]" />
             </div>
           )}
         </div>
 
         <div>
           <div className={container} onClick={() => toggle1()}>
-            <i className="fa fa-database text-primary-org w-[40px] animate-bounce text-[24px] font-black lg:w-[50px]"></i>
+            <i className="fa fa-database text-primary-org w-[40px] text-[24px] font-black lg:w-[50px] animate-bounce"></i>
             <div className="w-full leading-5 lg:leading-7">
               <p className="text-[18px] font-semibold lg:text-[24px]">
                 Backend Development
@@ -99,7 +99,7 @@ export default function Tech() {
             <div className="flex flex-col gap-[20px]">
               <TechTools text="NextJs" width="w-[55%]" />
               <TechTools text="NodeJS" width="w-[25%]" />
-              <TechTools text="ExpressJS" width="w-[20%]" />
+              <TechTools text="ExpressJs" width="w-[20%]" />
             </div>
           )}
         </div>
