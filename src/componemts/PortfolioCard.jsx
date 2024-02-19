@@ -7,7 +7,7 @@ export default function PortfolioCard(props) {
       <img
         src={props.src}
         alt="alt"
-        className=" h-[170px] w-full rounded-xl opacity-60 md:h-[220px] lg:w-[350px]"
+        className=" h-[170px] w-full rounded-xl opacity-80 md:h-[220px] lg:w-[380px]"
       />
       <div className="lg:w-[350px]">
         <p className="mt-[25px] text-[18px] font-semibold md:text-[24px] lg:mt-[-5px]">

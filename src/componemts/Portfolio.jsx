@@ -5,6 +5,7 @@ import fintekk from "../assets/fintekk.png";
 import construction from "../assets/construction.png";
 import smtp from "../assets/smtp-app.png";
 import shopbuddy from "../assets/shopbuddy.png";
+import shopbuddyfe from "../assets/shopbuddyfe.png"
 import Headings from "./Headings";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -41,6 +42,14 @@ export default function Portfolio() {
               head="ShopBuddy"
               desc="An ecommerce app built on TailwindCSS, ReactJS, NextJS, Prisma & Mongodb. Responsive across devices."
               hrefff="https://shopbuddy1.vercel.app/"
+            />
+          </SwiperSlide>
+          <SwiperSlide>
+            <PortfolioCard
+              src={shopbuddyfe}
+              head="ShopBuddyFE"
+              desc="An ecommerce app built on TailwindCSS, ReactJS. Responsive across all devices."
+              hrefff="https://shopbuddyfe.vercel.app/"
             />
           </SwiperSlide>
           <SwiperSlide>

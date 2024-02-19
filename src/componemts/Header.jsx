@@ -25,7 +25,7 @@ export default function Header() {
   return (
     <>
       <header className="flex w-full items-center justify-center lg:h-[50px]">
-        <nav className="fixed top-0 z-50 mt-0 h-12 w-full items-center justify-center bg-white bg-opacity-10 backdrop-blur rounded-b-3xl bg-blend-soft-light sm:bg-slate-900 lg:m-auto lg:mx-auto lg:flex lg:h-[50px] lg:w-[1200px] lg:justify-between">
+        <nav className="fixed top-0 z-50 mt-0 h-12 w-full items-center justify-center bg-white bg-opacity-5 backdrop-blur rounded-b-xl bg-blend-soft-light sm:bg-slate-900 lg:m-auto lg:mx-auto lg:flex lg:h-[50px] lg:w-[1200px] lg:justify-between">
           <div className="mx-[30px] mt-[5px] flex items-center justify-between lg:mx-0 lg:mt-0">
             <div id="logo" className=" h-[39px]">
               <p className="text-primary-org text-[15px] font-semibold leading-[34px] md:text-[20px] lg:text-[26px]">

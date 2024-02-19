@@ -88,11 +88,11 @@ export default function Home() {
             <img src={polygon} alt="" />
           </div>
         </div>
-        <div
+        <a href="#about"
           className={` ${visibility ? "flex" : "hidden"} mt-14 animate-bounce flex-col items-center`}
         >
           <i className="fa fa-long-arrow-down text-[28px]"></i>
-        </div>
+        </a>
 
         <About />
         <Tech />
