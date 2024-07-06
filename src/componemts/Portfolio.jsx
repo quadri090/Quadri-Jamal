@@ -6,6 +6,7 @@ import construction from "../assets/construction.png";
 import smtp from "../assets/smtp-app.png";
 import shopbuddy from "../assets/shopbuddy.png";
 import shopbuddyfe from "../assets/shopbuddyfe.png"
+import chowshopnew from "../assets/chow-shop-new.png"
 import Headings from "./Headings";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -36,6 +37,14 @@ export default function Portfolio() {
           modules={[Autoplay, Pagination]}
           className="mySwiper mt-[80px] h-auto"
         >
+          <SwiperSlide>
+            <PortfolioCard
+              src={chowshopnew}
+              head="Chow Shop"
+              desc="A CRUD ecommerce app built on TailwindCSS, ReactJS, NextJS, Prisma & Mongodb. Responsive across devices."
+              hrefff="https://chow-shop-new.vercel.app"
+            />
+          </SwiperSlide>
           <SwiperSlide>
             <PortfolioCard
               src={shopbuddy}
